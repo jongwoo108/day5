@@ -1,0 +1,400 @@
+2026-01-16 13:16:14,825 | INFO | uvicorn.error | Started server process [37372]
+2026-01-16 13:16:14,826 | INFO | uvicorn.error | Waiting for application startup.
+2026-01-16 13:16:14,826 | INFO | uvicorn.error | Application startup complete.
+2026-01-16 13:16:16,282 | INFO | uvicorn.error | Shutting down
+2026-01-16 13:16:16,389 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-01-16 13:16:16,389 | INFO | uvicorn.error | Application shutdown complete.
+2026-01-16 13:16:16,389 | INFO | uvicorn.error | Finished server process [37372]
+2026-01-16 13:16:20,330 | INFO | uvicorn.error | Started server process [46128]
+2026-01-16 13:16:20,331 | INFO | uvicorn.error | Waiting for application startup.
+2026-01-16 13:16:20,331 | INFO | uvicorn.error | Application startup complete.
+2026-01-16 13:17:20,420 | INFO | uvicorn.error | Shutting down
+2026-01-16 13:17:20,526 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-01-16 13:17:20,526 | INFO | uvicorn.error | Application shutdown complete.
+2026-01-16 13:17:20,526 | INFO | uvicorn.error | Finished server process [46128]
+2026-01-16 13:20:13,909 | INFO | uvicorn.error | Started server process [13060]
+2026-01-16 13:20:13,909 | INFO | uvicorn.error | Waiting for application startup.
+2026-01-16 13:20:13,909 | INFO | uvicorn.error | Application startup complete.
+2026-01-16 13:20:22,366 | ERROR | root | 제목이 없는 할 일 생성 시도: content missing
+2026-01-16 13:20:22,366 | INFO | uvicorn.access | 127.0.0.1:54401 - "POST /todos HTTP/1.1" 400
+2026-01-16 13:20:31,278 | ERROR | root | 제목이 없는 할 일 생성 시도: content missing
+2026-01-16 13:20:31,278 | INFO | uvicorn.access | 127.0.0.1:54402 - "POST /todos HTTP/1.1" 400
+2026-01-16 13:20:43,522 | ERROR | root | 제목이 없는 할 일 생성 시도: content missing
+2026-01-16 13:20:43,523 | INFO | uvicorn.access | 127.0.0.1:54404 - "POST /todos HTTP/1.1" 400
+2026-01-16 13:22:33,230 | INFO | uvicorn.access | 127.0.0.1:61013 - "POST /todos/1 HTTP/1.1" 405
+2026-01-16 13:22:59,100 | INFO | uvicorn.access | 127.0.0.1:61018 - "GET /todos HTTP/1.1" 500
+2026-01-16 13:22:59,100 | ERROR | uvicorn.error | Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\applications.py", line 1135, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 101, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 355, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 245, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 134, in get_todos
+    conn = get_db()
+           ^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 68, in get_db
+    return mysql.connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 142, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1604, in connect
+    self._open_connection()
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 354, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+RuntimeError: Failed raising error.
+2026-01-16 13:23:11,514 | INFO | uvicorn.access | 127.0.0.1:61025 - "GET /todos HTTP/1.1" 500
+2026-01-16 13:23:11,514 | ERROR | uvicorn.error | Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\applications.py", line 1135, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 101, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 355, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 245, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 134, in get_todos
+    conn = get_db()
+           ^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 68, in get_db
+    return mysql.connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 142, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1604, in connect
+    self._open_connection()
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 354, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+RuntimeError: Failed raising error.
+2026-01-16 13:23:26,780 | INFO | uvicorn.error | Shutting down
+2026-01-16 13:23:26,886 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-01-16 13:23:26,886 | INFO | uvicorn.error | Application shutdown complete.
+2026-01-16 13:23:26,886 | INFO | uvicorn.error | Finished server process [13060]
+2026-01-16 13:23:29,599 | INFO | uvicorn.error | Started server process [43472]
+2026-01-16 13:23:29,599 | INFO | uvicorn.error | Waiting for application startup.
+2026-01-16 13:23:29,599 | INFO | uvicorn.error | Application startup complete.
+2026-01-16 13:23:35,896 | INFO | uvicorn.access | 127.0.0.1:61034 - "GET /todos HTTP/1.1" 500
+2026-01-16 13:23:35,897 | ERROR | uvicorn.error | Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\applications.py", line 1135, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 101, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 355, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 245, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 134, in get_todos
+    conn = get_db()
+           ^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 68, in get_db
+    return mysql.connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 142, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1604, in connect
+    self._open_connection()
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 354, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+RuntimeError: Failed raising error.
+2026-01-16 13:24:17,848 | INFO | uvicorn.access | 127.0.0.1:57485 - "GET /todos HTTP/1.1" 500
+2026-01-16 13:24:17,849 | ERROR | uvicorn.error | Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 410, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\applications.py", line 1135, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\applications.py", line 107, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 115, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 101, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 355, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\fastapi\routing.py", line 245, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2502, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 986, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 134, in get_todos
+    conn = get_db()
+           ^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 68, in get_db
+    return mysql.connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 142, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1604, in connect
+    self._open_connection()
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 354, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+RuntimeError: Failed raising error.
+2026-01-16 13:25:13,012 | INFO | uvicorn.error | Shutting down
+2026-01-16 13:25:13,117 | INFO | uvicorn.error | Waiting for application shutdown.
+2026-01-16 13:25:13,117 | INFO | uvicorn.error | Application shutdown complete.
+2026-01-16 13:25:13,117 | INFO | uvicorn.error | Finished server process [43472]
+2026-01-16 13:25:15,493 | INFO | uvicorn.error | Started server process [33284]
+2026-01-16 13:25:15,493 | INFO | uvicorn.error | Waiting for application startup.
+2026-01-16 13:25:15,561 | ERROR | uvicorn.error | Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 571, in __aenter__
+    await self._router.startup()
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 671, in startup
+    await handler()
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 85, in startup_event
+    conn = get_db()
+           ^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 68, in get_db
+    return mysql.connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 142, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1604, in connect
+    self._open_connection()
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 354, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+RuntimeError: Failed raising error.
+
+2026-01-16 13:25:15,561 | ERROR | uvicorn.error | Application startup failed. Exiting.
+2026-01-16 13:26:14,296 | INFO | uvicorn.error | Started server process [1716]
+2026-01-16 13:26:14,296 | INFO | uvicorn.error | Waiting for application startup.
+2026-01-16 13:26:14,411 | ERROR | uvicorn.error | Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 354, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'root'@'172.23.0.1' (using password: YES)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 571, in __aenter__
+    await self._router.startup()
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\starlette\routing.py", line 671, in startup
+    await handler()
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 85, in startup_event
+    conn = get_db()
+           ^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\main.py", line 68, in get_db
+    return mysql.connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\pooling.py", line 322, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 142, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1604, in connect
+    self._open_connection()
+  File "C:\Users\ACER\OneDrive\문서\workspace\upstage-project\day5\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 360, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'root'@'172.23.0.1' (using password: YES)
+
+2026-01-16 13:26:14,411 | ERROR | uvicorn.error | Application startup failed. Exiting.
+2026-01-16 13:27:30,389 | INFO | uvicorn.error | Started server process [42660]
+2026-01-16 13:27:30,389 | INFO | uvicorn.error | Waiting for application startup.
+2026-01-16 13:27:30,531 | INFO | uvicorn.error | Application startup complete.
+2026-01-16 13:27:44,278 | INFO | uvicorn.access | 127.0.0.1:62616 - "GET /todos HTTP/1.1" 200
+2026-01-16 13:28:24,725 | INFO | uvicorn.access | 127.0.0.1:59280 - "GET /todos HTTP/1.1" 200
+2026-01-16 13:28:27,845 | INFO | uvicorn.access | 127.0.0.1:59280 - "GET /todos HTTP/1.1" 200

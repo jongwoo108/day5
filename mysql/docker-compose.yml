@@ -1,0 +1,19 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: fastapi-mysql
+    restart: always
+    environment:
+      # 파이썬 코드의 password="1234"와 일치
+      MYSQL_ROOT_PASSWORD: "1234"
+      # 파이썬 코드의 database="test_db"와 일치 (자동 생성)
+      MYSQL_DATABASE: "test_db"
+    ports:
+      # 로컬의 3306 포트와 컨테이너의 3306 포트를 연결
+      - "3307:3306"
+    volumes:
+      # 컨테이너를 삭제해도 데이터가 유지되도록 로컬 폴더와 연결
+      - ./mysql_data:/var/lib/mysql
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
